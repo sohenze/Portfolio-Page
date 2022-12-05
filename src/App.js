@@ -117,7 +117,8 @@ const Projects = () => {
         <h3> Endless Tower </h3>
       </header>
       <body>
-        <img style = {{width: "14%", height: "14%"}} src = {require('./images/endlesstower.jpg')} alt = 'endlesstower'/>
+        <img style = {{width: "14%", height: "14%", paddingRight: 50}} src = {require('./images/endlesstower.jpg')} alt = 'endlesstower'/>
+        <video style = {{width: "14%", height: "14%"}} src = {require('./images/gameplay.mp4')} controls = 'controls'/>
         <p>
             EndlessTower is a mobile top-down 2D idle RPG game. The game has various features including powerups, stat progression and an auto-battle functionality!
             <br></br>This was a solo project I did over the summer of 2022 using Unity. As I had no prior experience with game development,
