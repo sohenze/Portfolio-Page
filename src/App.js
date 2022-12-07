@@ -1,7 +1,9 @@
 import './App.css';
+import Sidebar from './components/Sidebar';
 
 const user = {
-  name: "Enze",
+  firstName: "Enze",
+  lastname: "Soh",
   email: "soh.enze@u.nus.edu",
   github: "https://github.com/sohenze",
   linkedin: "https://www.linkedin.com/in/enzesoh/"
@@ -13,8 +15,8 @@ const EndlessTower = "https://play.google.com/store/apps/details?id=com.Endevel.
 const SLang = () => {
   return (
     <div className='SLang'>
-      <h4>Languages</h4>
-      <ul style={{margin: 0, paddingLeft: 20}}>
+      <h3>Languages</h3>
+      <ul style={{margin: 0, paddingLeft: 0, fontSize: '19px', listStyle: 'none'}}>
         <li>English</li>
         <li>Chinese</li>
         <li>Japanese (conversational)</li>
@@ -26,13 +28,13 @@ const SLang = () => {
 const PLang = () => {
   return (
     <div className='PLang'>
-      <h4>Programming Languages</h4>
-      <ul style={{margin: 0, paddingLeft: 20}}>
+      <h3>Programming Languages</h3>
+      <ul style={{margin: 0, paddingLeft: 0, fontSize: '19px', listStyle: 'none'}}>
         <li>Java</li>
         <li>JavaScript</li>
         <li>Python</li>
-        <li>C (minimal)</li>
-        <li>C# (minimal)</li>
+        <li>C (somewhat)</li>
+        <li>C# (somewhat)</li>
       </ul>
     </div>
     
@@ -42,12 +44,12 @@ const PLang = () => {
 const Tools = () => {
   return (
     <div className='Tools'>
-      <h4>Tools</h4>
-      <ul style={{margin: 0, paddingLeft: 20}}>
+      <h3>Tools</h3>
+      <ul style={{margin: 0, paddingLeft: 0, fontSize: '19px', listStyle: 'none'}}>
         <li>Git</li>
         <li>GitHub</li>
         <li>Unity</li>
-        <li>ReactJS (minimal, this page was done in React)</li>
+        <li>ReactJS (somewhat, this page was done with React)</li>
       </ul>
     </div>
     
@@ -56,70 +58,55 @@ const Tools = () => {
 
 const Welcome = () => {
   return (
-    <>
+    <div id='Welcome'>
       <h1>Hello and welcome to my portfolio page!</h1>
-    </>
+    </div>
   )
 }
 
 const AboutMe = () => {
   return (
-    <>
-      <header>
-        <h2> About Me </h2>
-      </header>
-      <body>
-        <p>
-          My name is {user.name} and I'm a year 2 Computer Science major at the National University of Singapore. While I am
-          <br></br>relatively inexeperienced, I am adaptable and always passionate about learning more! 
-          <br></br>I hope the projects shown here will help show that :)
-        </p>
-      </body>
-    </>
+    <div id='AboutMe'>
+      <h1> About Me </h1>
+      <p style = {{fontSize: '20px'}}>
+        My name is {user.firstName} and I'm a year 2 Computer Science major at the National University of Singapore. 
+        <br></br>While I am relatively inexeperienced, I am adaptable and always passionate about learning more! 
+        <br></br>I hope the projects here will help show that :)
+      </p>
+    </div>
   )
 }
 
 const WhatIKnow = () => {
   return (
-    <>
-      <h2> What I Know </h2>
+    <div id='WhatIKnow'>
+      <h1> What I Know </h1>
       <div className='WhatIKnow'>
         <SLang />
         <PLang />
         <Tools />
       </div>
-    </>
+    </div>
   )
 }
 
 const Projects = () => {
   return (
-    <>
-      <header>
-        <h2> Projects </h2>
-      </header>
-      <body>
-        <header>
-          <h3> TrackO </h3>
-        </header>
-        <body>
-          <img style = {{width: "50%", height: "50%"}} src = {require('./images/trackoUI.png')} alt = 'trackoUI'/>
-          <p>
-            TrackO is a command-line interface order and inventory manager for business owners written in Java and JavaFX. I was in the team of 5 that created
-            <br></br>this application and because it was my first exposure to software engineering,
-            it was tough at first but I managed to learn a lot from it such as the
-            <br></br>use of revision control systems(Git, Github), software architecture, software engineering principles and testing.
-            <br></br><a href = {TrackO}>[Github]</a>.
-          </p>
-        </body>
-      </body>
-      <header>
-        <h3> Endless Tower </h3>
-      </header>
-      <body>
-        <img style = {{width: "14%", height: "14%", paddingRight: 50}} src = {require('./images/endlesstower.jpg')} alt = 'endlesstower'/>
-        <video style = {{width: "14%", height: "14%"}} src = {require('./images/gameplay.mp4')} controls = 'controls'/>
-        <p>
+    <div id='Projects'>
+      <h1> Projects </h1>
+        <h2> TrackO </h2>
+        <img style = {{width: "800px", height: undefined, aspectRatio: 7/4}} src = {require('./images/trackoUI.png')} alt = 'trackoUI'/>
+        <p style = {{fontSize: '18px'}}>
+          TrackO is a command-line interface order and inventory manager for business owners written in Java and JavaFX. I was in the team of 5 that created
+          <br></br>this application and because it was my first exposure to software engineering,
+          it was tough at first but I managed to learn a lot from it such as the
+          <br></br>use of revision control systems(Git, Github), software architecture, software engineering principles and testing.
+          <br></br><a href = {TrackO} target="_blank" rel="noreferrer">[Github]</a>.
+        </p>
+        <h2> Endless Tower </h2>
+        <img style = {{width: "300px", height: undefined, aspectRatio: 2/4, paddingRight: 50}} src = {require('./images/endlesstower.jpg')} alt = 'endlesstower'/>
+        <video style = {{width: "300px", height: undefined, aspectRatio: 2/4}} src = {require('./images/gameplay.mp4')} controls = 'controls'/>
+        <p style = {{fontSize: '18px'}}>
             EndlessTower is a mobile top-down 2D idle RPG game. The game has various features including powerups, stat progression and an auto-battle functionality!
             <br></br>This was a solo project I did over the summer of 2022 using Unity. As I had no prior experience with game development,
             taking this project on was extremely
@@ -127,20 +114,22 @@ const Projects = () => {
             balance the game mechanics and difficulty
             <br></br>to keep it interesting throughout numerous levels. While it is far from being a polished game, I consider it a very good learning experience!
             <br></br>(Plans to update and refine the game are in the works)
-            <br></br><a href = {EndlessTower}>[Open Test]</a>
-          </p>
-      </body>
-    </>
+            <br></br><a href = {EndlessTower} target="_blank" rel="noreferrer">[Open Test]</a>
+        </p>
+    </div>
   )
 }
 
 const App = () => {
   return (
-    <div className = "App"> 
-      <Welcome />
-      <AboutMe />
-      <WhatIKnow />
-      <Projects />
+    <div className = "App">
+      <div className='Content'>
+        <Welcome />
+        <AboutMe />
+        <WhatIKnow />
+        <Projects />
+      </div>
+      <Sidebar />
     </div>
   );
 }
