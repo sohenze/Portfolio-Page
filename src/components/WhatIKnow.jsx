@@ -84,8 +84,8 @@ const SLang = () => {
     }
 
     return (
-      <div className='WIKSection' onClick={toggle}>
-        <div className = 'WIKHeading'>
+      <div className='WIKSection'>
+        <div className = 'WIKHeading' onClick={toggle}>
             <h3>Tools <IoIosArrowDown /></h3>
         </div>
         {state ? 
