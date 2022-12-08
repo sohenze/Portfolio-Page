@@ -1,3 +1,6 @@
+import { useState } from "react";
+
+//Data
 import { PLangData } from "../data/PLangData";
 import { SLangData } from "../data/SLangData";
 import { ToolsData } from "../data/ToolsData";
@@ -19,66 +22,86 @@ export const WhatIKnow = () => {
 }
 
 const SLang = () => {
+    const [state, setState] = useState(false);
+    const toggle = () => {
+        setState(!state);
+    }
+
     return (
       <div className='SLang'>
-        <div className = 'SLangHeading'>
+        <div className = 'SLangHeading' onClick={toggle}>
             <h3>Languages <IoIosArrowDown /></h3>
         </div>
-        <ul className = 'SLangList'>
-          {SLangData.map((val, key) => {
-            return (
-              <li key={key}> 
-                  <div>
-                      {val.name}
-                  </div> 
-              </li>
-            )
-          })}
-        </ul>
+        
+        {state ? 
+            <ul className = 'SLangList'>
+              {SLangData.map((val, key) => {
+                return (
+                  <li key={key}> 
+                      <div>
+                          {val.name}
+                      </div> 
+                  </li>
+                )
+              })}
+            </ul> : null
+        }
       </div>
     )
   }
   
   const PLang = () => {
+    const [state, setState] = useState(false);
+    const toggle = () => {
+        setState(!state);
+    }
+
     return (
       <div className='PLang'>
-        <div className = 'PLangHeading'>
+        <div className = 'PLangHeading' onClick={toggle}>
             <h3>Programming Languages <IoIosArrowDown /></h3>
         </div>
-        <ul className = 'PLangList'>
-          {PLangData.map((val, key) => {
-            return (
-                <li key={key}> 
-                    <div>
-                        {val.name}
-                    </div> 
-                </li>
-            )
-          })}
-        </ul>
+        {state ? 
+            <ul className = 'PLangList'>
+              {PLangData.map((val, key) => {
+                return (
+                  <li key={key}> 
+                      <div>
+                          {val.name}
+                      </div> 
+                  </li>
+                )
+              })}
+            </ul> : null
+        }
       </div>
-      
     )
   }
   
   const Tools = () => {
+    const [state, setState] = useState(false);
+    const toggle = () => {
+        setState(!state);
+    }
+
     return (
-      <div className='Tools'>
+      <div className='Tools' onClick={toggle}>
         <div className = 'ToolsHeading'>
             <h3>Tools <IoIosArrowDown /></h3>
         </div>
-        <ul className='ToolsList'>
-          {ToolsData.map((val, key) => {
-            return (
-              <li key={key}> 
-                  <div>
-                      {val.name}
-                  </div> 
-              </li>
-            )
-          })}
-        </ul>
+        {state ? 
+            <ul className = 'ToolsList'>
+              {ToolsData.map((val, key) => {
+                return (
+                  <li key={key}> 
+                      <div>
+                          {val.name}
+                      </div> 
+                  </li>
+                )
+              })}
+            </ul> : null
+        }
       </div>
-      
     )
   }
