@@ -79,77 +79,32 @@ body {
   background-color: #293846;
 }
 
-.SLang {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-
-.SLang .SLangHeading {
-  height: 60px;
-}
-
-.SLang .SLangHeading:hover {
-  cursor: pointer;
-  background-color: #5A9EDE;
-}
-
-
-.SLangList{
-  margin: 0;
-  padding: 0;
-  font-size: 19px; 
-  list-style: none;
-}
-
-.PLang {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-
-.PLang .PLangHeading {
-  height: 60px;
-}
-
-.PLang .PLangHeading:hover {
-  cursor: pointer;
-  background-color: #5A9EDE;
-}
-
-.PLangList{
-  margin: 0;
-  padding: 0;
-  font-size: 19px; 
-  list-style: none;
-}
-
-.Tools {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-
-.Tools .ToolsHeading {
-  height: 60px;
-}
-
-.Tools .ToolsHeading:hover {
-  cursor: pointer;
-  background-color: #5A9EDE;
-}
-
-.ToolsList{
-  margin: 0;
-  padding: 0;
-  font-size: 19px; 
-  list-style: none;
-}
-
 .WhatIKnow {
   height: 200px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.WIKSection {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.WIKHeading {
+  height: 60px;
+}
+
+.WIKHeading:hover {
+  cursor: pointer;
+  background-color: #5A9EDE;
+}
+
+.WIKList{
+  margin: 0;
+  padding: 0;
+  font-size: 19px; 
+  list-style: none;
 }

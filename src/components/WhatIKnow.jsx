@@ -28,13 +28,13 @@ const SLang = () => {
     }
 
     return (
-      <div className='SLang'>
-        <div className = 'SLangHeading' onClick={toggle}>
+      <div className='WIKSection'>
+        <div className = 'WIKHeading' onClick={toggle}>
             <h3>Languages <IoIosArrowDown /></h3>
         </div>
         
         {state ? 
-            <ul className = 'SLangList'>
+            <ul className = 'WIKList'>
               {SLangData.map((val, key) => {
                 return (
                   <li key={key}> 
@@ -57,12 +57,12 @@ const SLang = () => {
     }
 
     return (
-      <div className='PLang'>
-        <div className = 'PLangHeading' onClick={toggle}>
+      <div className='WIKSection'>
+        <div className = 'WIKHeading' onClick={toggle}>
             <h3>Programming Languages <IoIosArrowDown /></h3>
         </div>
         {state ? 
-            <ul className = 'PLangList'>
+            <ul className = 'WIKList'>
               {PLangData.map((val, key) => {
                 return (
                   <li key={key}> 
@@ -85,12 +85,12 @@ const SLang = () => {
     }
 
     return (
-      <div className='Tools' onClick={toggle}>
-        <div className = 'ToolsHeading'>
+      <div className='WIKSection' onClick={toggle}>
+        <div className = 'WIKHeading'>
             <h3>Tools <IoIosArrowDown /></h3>
         </div>
         {state ? 
-            <ul className = 'ToolsList'>
+            <ul className = 'WIKList'>
               {ToolsData.map((val, key) => {
                 return (
                   <li key={key}> 
