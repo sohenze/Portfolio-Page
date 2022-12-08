@@ -1,5 +1,5 @@
-import {SidebarData} from './SidebarData';
-import UserData from '../UserData.jsx';
+import {SidebarData} from '../data/SidebarData';
+import {UserData} from '../data/UserData.jsx';
 
 //Icons
 import {AiOutlineMail} from 'react-icons/ai'

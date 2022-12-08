@@ -1,4 +1,4 @@
-const UserData = {
+export const UserData = {
     firstName: "Enze",
     lastname: "Soh",
     email: "soh.enze@u.nus.edu",
@@ -6,4 +6,3 @@ const UserData = {
     linkedin: "https://www.linkedin.com/in/enzesoh/"
 };
 
-export default UserData;
