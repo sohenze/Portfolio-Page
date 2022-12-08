@@ -2,9 +2,12 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
-  padding-left: 150px;
+}
+
+.Content {
+  translate: -200px
 }
 
 body {
@@ -79,9 +82,16 @@ body {
   background-color: #293846;
 }
 
-.WhatIKnow {
-  height: 200px;
+.WIK {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.WIKContent {
+  width: 900px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -91,6 +101,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 300px;
+  
 }
 
 .WIKHeading {
@@ -102,9 +113,38 @@ body {
   background-color: #5A9EDE;
 }
 
-.WIKList{
+.WIKList {
   margin: 0;
   padding: 0;
   font-size: 19px; 
   list-style: none;
+}
+
+.ProjectSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectTitle {
+  height: 60px;
+  width: 800px;
+}
+
+.ProjectTitle:hover {
+  cursor: pointer;
+  background-color: #5A9EDE;
+}
+
+.ProjectContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectDesc {
+  font-size: 18px;
+  width: 900px;
 }

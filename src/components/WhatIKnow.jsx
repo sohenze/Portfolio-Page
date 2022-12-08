@@ -10,9 +10,9 @@ import { IoIosArrowDown } from'react-icons/io';
 
 export const WhatIKnow = () => {
     return (
-      <div id='WhatIKnow'>
+      <div className="WIK" id='WhatIKnow'>
         <h1> What I Know </h1>
-        <div className='WhatIKnow'>
+        <div className='WIKContent'>
           <SLang />
           <PLang />
           <Tools />
@@ -32,7 +32,6 @@ const SLang = () => {
         <div className = 'WIKHeading' onClick={toggle}>
             <h3>Languages <IoIosArrowDown /></h3>
         </div>
-        
         {state ? 
             <ul className = 'WIKList'>
               {SLangData.map((val, key) => {
