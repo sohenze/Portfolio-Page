@@ -82,6 +82,18 @@ body {
   background-color: #293846;
 }
 
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutMeDesc {
+  font-size: 20px;
+  width: 900px;
+}
+
 .WIK {
   width: 100%;
   display: flex;
