@@ -6,7 +6,7 @@ import endlessTower from '../images/endlesstower.jpg'
 import gameplay from '../images/gameplay.mp4'
 
 //Icons
-import { IoIosArrowDown } from'react-icons/io';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const trackoLink = "https://github.com/AY2223S1-CS2103T-W15-3/tp";
 const endlessTowerLink = "https://play.google.com/store/apps/details?id=com.Endevel.EndlessTower";
