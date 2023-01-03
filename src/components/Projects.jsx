@@ -50,7 +50,7 @@ const TrackO = () => {
               this application and because it was my first exposure to software engineering,
               it was tough at first but I managed to learn a lot from it such as the
               use of revision control systems(Git, Github), software architecture, software engineering principles and testing.
-              <br></br><a href = {trackoLink} target="_blank" rel="noreferrer">[Github]</a>.
+              <br></br><a href = {trackoLink} target="_blank" rel="noreferrer">[Github]</a>
             </p>
           </div>
         </div> : null

@@ -13,7 +13,7 @@
 body {
   margin: 0;
   padding-left: 0;
-  background-color: #98C2E9;
+  background-color: #D4F4FF;
 }
 
 .Sidebar {
@@ -100,6 +100,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 }
 
 .WIKContent {
