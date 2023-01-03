@@ -6,6 +6,25 @@ import {AiOutlineMail} from 'react-icons/ai'
 import {AiOutlineGithub} from 'react-icons/ai'
 import {AiOutlineLinkedin} from 'react-icons/ai'
 
+export const Sidebar = () => {
+    return (
+        <div className="Sidebar">
+            <ul className='SidebarList'>
+                {SidebarData.map((val, key) => {
+                    return (
+                        <li key={key} className='SidebarRow' onClick={() => window.location.replace(val.link)}> 
+                            <div>
+                                {val.title}
+                            </div> 
+                        </li>
+                    )
+                })}
+            </ul>
+            <Contact />
+        </div>
+    )
+}
+
 const mailto = 'mailto:' + UserData.email;
 
 const Contact = () => {
@@ -23,25 +42,6 @@ const Contact = () => {
                     <AiOutlineLinkedin size="2rem"/> &nbsp; Linkedin
                 </li>
             </ul>
-        </div>
-    )
-}
-
-export const Sidebar = () => {
-    return (
-        <div className="Sidebar">
-            <ul className='SidebarList'>
-                {SidebarData.map((val, key) => {
-                    return (
-                        <li key={key} className='SidebarRow' onClick={() => window.location.replace(val.link)}> 
-                            <div>
-                                {val.title}
-                            </div> 
-                        </li>
-                    )
-                })}
-            </ul>
-            <Contact />
         </div>
     )
 }
