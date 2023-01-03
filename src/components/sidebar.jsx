@@ -27,7 +27,7 @@ const Contact = () => {
     )
 }
 
-const Sidebar = () => {
+export const Sidebar = () => {
     return (
         <div className="Sidebar">
             <ul className='SidebarList'>
@@ -45,5 +45,3 @@ const Sidebar = () => {
         </div>
     )
 }
-
-export default Sidebar;

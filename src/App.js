@@ -1,7 +1,7 @@
 import './App.css';
 import { AboutMe } from './components/AboutMe';
 import { Projects } from './components/Projects';
-import Sidebar from './components/Sidebar';
+import { Sidebar } from './components/Sidebar';
 import { Welcome } from './components/Welcome';
 import { WhatIKnow } from './components/WhatIKnow';
 
