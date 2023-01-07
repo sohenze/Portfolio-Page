@@ -84,8 +84,7 @@ const EndlessTower = () => {
               challenging. Not only did I have to learn a new language(C#), I had to familiarise myself with the Unity API and
               balance the game mechanics and difficulty
               to keep it interesting throughout numerous levels. While it is far from being a polished game, I consider it a very good learning experience!
-              (Plans to update and refine the game are in the works)
-              <br></br><a href = {endlessTowerLink} target="_blank" rel="noreferrer">[Open Test]</a>
+              <br></br><a href = {endlessTowerLink} target="_blank" rel="noreferrer">[Google Playstore]</a>
             </p>
           </div>
         </div> : null
