@@ -17,7 +17,7 @@ Personal data pertaining to the user are stored here as accessable variables to 
 ### Images
 Media files used in the webpage are stored here.
 
-#### Known Bugs/Areas to work on
+## Known Bugs/Areas to work on
 
 1. Display is not fitted to the window screen size. Sections of the sidebar can be cut off.
 2. Components do not react to a window resize.
