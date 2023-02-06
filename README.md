@@ -1,6 +1,6 @@
 # Enze's Portfolio Page
 
-This is a personal portfolio project I started in December 2022. It is my first exposure to React.js and I am using this as a platform to learn React. The page can be accessed here https://sohenze.vercel.app/.
+This is a personal portfolio project I started in December 2022. It is my first exposure to React.js and I am using this as a platform to learn React. It is still a work in progress. The page can be accessed here https://sohenze.vercel.app/.
 
 ## Folders
 
