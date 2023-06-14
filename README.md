@@ -1,6 +1,6 @@
-# Enze's Portfolio Page
+# Enze's Portfolio Page (WIP)
 
-This is a personal portfolio project I started in December 2022. It is my first exposure to React.js and I am using this as a platform to learn React. It is still a work in progress. The page can be accessed here https://sohenze.vercel.app/.
+This is a personal portfolio project I started in December 2022. It is my first exposure with web development through HTML, CSS and React.js. It is still a work in progress and I am currently brushing up my skills before continuing this project. The page can be accessed here https://sohenze.vercel.app/.
 
 ## Folders
 
@@ -20,4 +20,4 @@ Media files used in the webpage are stored here.
 ## Known Bugs/Areas to work on
 
 1. Display is not fitted to the window screen size. Sections of the sidebar can be cut off.
-2. Components do not react to a window resize.
+2. Components do not scale according to window size.
